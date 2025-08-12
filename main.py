@@ -23,7 +23,7 @@ vector_db=None
 def Call_groq(context_for_query:str,user_input:str):
     print(groq_api_key)
 
-    client=Groq(api_key="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")
+    client=Groq(api_key=groq_api_key)
     model_name="openai/gpt-oss-120b"
     qna_system_message = """
         You are an friendly AI assistant that answers questions strictly based on the given context retrieved from a knowledge base.
